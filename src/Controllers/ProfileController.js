@@ -1,5 +1,5 @@
 // Package Importing
-const { userRegister } = require("../Models/Register");
+const { userRegister } = require("../Models/User");
 
 // User to view only Public Profiles
 const view_public_user = async (req,res)=>{

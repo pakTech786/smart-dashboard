@@ -1,5 +1,5 @@
 // Package Importing
-const { userRegister } = require("../Models/Register")
+const { userRegister } = require("../Models/User")
 
 
 // View all the Profile (Public,private)

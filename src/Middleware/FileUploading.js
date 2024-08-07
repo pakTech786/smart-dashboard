@@ -1,7 +1,7 @@
 // Package Importing
 const multer = require("multer");
 const path = require("path");
-const { userRegister } = require('../Models/Register');
+const { userRegister } = require('../Models/User');
 
 let counts = 0;
 

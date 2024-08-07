@@ -4,11 +4,7 @@ const { v4 } = require("uuid");
 
 // User Schema Creation
 const userSchema = new mongoose.Schema({
-    _id: {
-        type: String,
-        default: v4
-    },
-    name: {
+    username: {
         type: String,
         trim: true,
         required: true
@@ -25,32 +21,21 @@ const userSchema = new mongoose.Schema({
         required: true,
 
     },
-    number: {
-        type: Number,
-        trim: true,
-        required: true,
-    },
-    bio: {
-        type: String,
-        trim: true
-    },
     role: {
         type: String,
         trim: true,
         default : "User"
     },
-    profile: {
-        type: String,
-        trim: true,
-        default : "Private"
-    },
-    imageupload : {
-        type: String,
+    purpose:{
+        type:String,
+        trim:true,
+        default:["Personal"],
+        enum:['Personal',"Education","Business"]
     }
 },{timestamps : true});
 
 // Schema Exports
 
-const userRegister = mongoose.model("aunthenticationregister",userSchema);
+const userRegister = mongoose.model("Users",userSchema);
 
 module.exports = {userRegister};

@@ -33,7 +33,7 @@ const Logout = require ("../Services/Logout")
 router.route("/register").post(Controller.userRegister)
 
 // User Login 
-router.route("/logincreate").post(ControllerLogin.userLoginCheck)
+router.route("/login").post(ControllerLogin.userLoginCheck)
 
 // Verify Auth Token : User
 router.route("/loginverify").post(Auth.login_token_verify,ControllerLogin.login_verify_token)

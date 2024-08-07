@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.topbar{
+  background-color: #195557;
+  color:white;
+}
+.topbar .navbar-brand {
+  color: #fff; /* Style the Navbar.Brand specifically */
+}
+
+.topbar .nav-link {
+  color: #fff; /* Style the Nav.Link elements */
+  /* Add hover effects, etc. as needed */
+}
+
+button{
+background-color:#195557 !important;
+color:white !important;
+}
+.sidebar {
+  background-color: #f8f9fa;
+  border-right: 1px solid #ced4da;
+}
+
+/********************sidebar************************/
+.d-flex {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  height: 100vh !important;
+    background-color:#195557;
+    
+}
+.nav-link{
+  color:white !important;
+}
+
+.active{
+  background-color: rgba(13, 110, 253, 0.25);
+}

@@ -1,5 +1,5 @@
 // Package Importing
-const { userRegister } = require("../Models/Register");
+const { userRegister } = require("../Models/User");
 const bcrypt = require ("bcryptjs");
 
 

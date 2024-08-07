@@ -1,5 +1,5 @@
 // Package Importing
-const { userRegister } = require("../Models/Register");
+const { userRegister } = require("../Models/User");
 const Bcryptjs = require("bcryptjs")
 
 // Login Check
@@ -35,11 +35,8 @@ const get_user_details = async (req) => {
     }
     else {
         // send specify data in frontend to view in this obj variable
-        let obj = {
-            name: find_id.name,
-            mail: find_id.email
-        }
-        return obj
+        
+        return find_id;
     }
 }
 

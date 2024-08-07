@@ -1,6 +1,6 @@
 // Package Importing
 const jwt = require("jsonwebtoken");
-const { userRegister } = require("../Models/Register");
+const { userRegister } = require("../Models/User");
 
 // Token Generate : Any Paramater name given
 const login_token = async (data) => {
